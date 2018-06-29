@@ -1,0 +1,6 @@
+environment: prod
+
+logging:
+  level: INFO
+  loggers:
+    com.zuehlke.jso: DEBUG
