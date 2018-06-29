@@ -1,4 +1,4 @@
 logging:
-  level: DEBUG
+  level: INFO
   loggers:
     com.zuehlke.jso: DEBUG

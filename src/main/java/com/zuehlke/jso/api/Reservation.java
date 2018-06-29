@@ -1,5 +1,8 @@
 package com.zuehlke.jso.api;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.time.OffsetDateTime;
 
 public class Reservation {
@@ -12,7 +15,13 @@ public class Reservation {
     private final long homeTeamId;
     private final long kickerBoxId;
 
-    public Reservation(long id, OffsetDateTime dateOfReservation, long visitorTeamId, long homeTeamId, long kickerBoxId) {
+    @JsonCreator
+    public Reservation(
+            @JsonProperty("id") long id,
+            @JsonProperty("dateOfReservation") OffsetDateTime dateOfReservation,
+            @JsonProperty("visitorTeamId") long visitorTeamId,
+            @JsonProperty("homeTeamId") long homeTeamId,
+            @JsonProperty("kickerBoxId") long kickerBoxId) {
         this.id = id;
         this.dateOfReservation = dateOfReservation;
         this.visitorTeamId = visitorTeamId;

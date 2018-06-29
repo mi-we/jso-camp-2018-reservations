@@ -32,6 +32,11 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+            <dependency>
+                <groupId>com.googlecode.objectify</groupId>
+                <artifactId>objectify</artifactId>
+                <version>6.0</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
@@ -39,6 +44,10 @@
         <dependency>
             <groupId>io.dropwizard</groupId>
             <artifactId>dropwizard-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.googlecode.objectify</groupId>
+            <artifactId>objectify</artifactId>
         </dependency>
     </dependencies>
 
